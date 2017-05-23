@@ -4,7 +4,7 @@ import './TopHeader.css'
 
 class TopHeader extends Component{
     render() {
-      const links = this.props.links.map(link => <a href="#">{link}</a>)
+      const links = this.props.links.map((link, i) => <a href="#" key={i}>{link}</a>)
         return(
             <div className="clearfix">
           <div className="float-left logo">
